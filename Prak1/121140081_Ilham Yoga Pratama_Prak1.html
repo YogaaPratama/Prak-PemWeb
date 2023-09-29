@@ -1,0 +1,111 @@
+<!-- by Ilham Yoga Pratama - 121140081 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 1 -->
+<!DOCTYPE html> <!-- Ini adalah deklarasi tipe dokumen HTML yang digunakan. -->
+<html> <!-- Awal dari elemen HTML. Semua konten HTML ada di dalamnya. -->
+    <head> <!-- Ini adalah bagian kepala dokumen HTML yang berisi meta informasi dan judul. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Konfigurasi tampilan untuk perangkat mobile. -->
+        <meta charset="UTF-8" /> <!-- Pengaturan karakter encoding ke UTF-8 untuk dukungan karakter internasional. -->
+        <title>CV - Ilham Yoga Pratama</title> <!-- Judul halaman web. -->
+    </head>
+    <body> <!-- Tubuh dokumen HTML dimulai di sini. Semua konten tampil di bagian ini. -->
+        <table border="3" width="200" align="center"> <!-- Tabel dengan atribut batas, lebar, dan penjajaran. -->
+            <tr> <!-- Baris pertama dalam tabel. -->
+                <td> <!-- Sel dalam tabel. -->
+                    <img src="Foto_ILHAM.png" width="200"> <!-- Menampilkan gambar dengan lebar 200 piksel. -->
+                    <h1>Ilham Yoga Pratama</h1> <!-- Judul utama (nama) dengan elemen h1. -->
+                    <p>Web Developer</p> <!-- Subjudul dengan elemen p. -->
+                    
+                    <nav> <!-- Navigasi utama halaman web. -->
+                        <ul> <!-- Daftar tak berangsur dalam navigasi. -->
+                            <li><a href="#tentang-saya">Tentang</a></li> <!-- Tautan ke bagian "Tentang Saya". -->
+                            <li><a href="#pengalaman-kerja">Pengalaman</a></li> <!-- Tautan ke bagian "Pengalaman Kerja". -->
+                            <li><a href="#hubungi-saya">Kontak</a></li> <!-- Tautan ke bagian "Hubungi Saya". -->
+                        </ul>
+                    </nav>
+
+                    <h3>Sosial Media Saya</h3> <!-- Subjudul untuk tautan media sosial. -->
+                    <ul> <!-- Daftar tautan media sosial. -->
+                        <li><a href="https://www.linkedin.com/in/ilham-yoga-pratama-69775a255/">LinkedIn</a></li>
+                        <li><a href="https://github.com/YogaaPratama">Github</a></li>
+                        <li><a href="https://www.instagram.com/yogapratama151/">Instagram</a></li>
+                    </ul>
+                    
+                    <h2 id="tentang-saya">Tentang Saya</h2> <!-- Bagian "Tentang Saya" dengan elemen h2 dan tautan ID. -->
+                    <p> <!-- Paragraf teks yang menjelaskan tentang diri Anda. -->
+                        Saya Ilham Yoga Pratama, mahasiswa Teknik Informatika, Institut Teknologi Sumatera Tahun 
+                        2021. Aktivitas saat ini adalah mahasiswa aktif semester 5 dan sebagai staff Kominfo di HMIF 
+                        (Himpunan Mahasiswa Teknik Informatika). Saya memiliki minat berkarir sebagai staff IT terutama 
+                        dalam bidang pemrograman web.
+                    </p>
+                    <figure> <!-- Elemen "figure" untuk menampilkan video dengan deskripsi. -->
+                        <video width="420" height="230" controls> <!-- Video dengan kontrol pemutaran. -->
+                            <source src="Vidio_ILHAM.mp4"> <!-- Sumber video. -->
+                        </video>
+                        <figcaption>Ini adalah video ILHAM.</figcaption> <!-- Deskripsi video. -->
+                    </figure>
+                    
+                    <!-- Disclaimer dibagian pekerjaan disini, karena saya belum pernah bekerja atau belum memiliki pengalaman kerja jadi saya hanya asal membuatnya -->
+                    <h2 id="pengalaman-kerja">Pengalaman Kerja</h2> <!-- Bagian "Pengalaman Kerja" dengan elemen h2 dan tautan ID. -->
+                    <table border="1"> <!-- Tabel untuk daftar pengalaman kerja. -->
+                        <tr> <!-- Baris pertama tabel berisi judul kolom. -->
+                            <th rowspan="3">No</th> <!-- Kolom "No" dengan penggabungan baris. -->
+                            <th rowspan="3">Posisi</th> <!-- Kolom "Posisi" dengan penggabungan baris. -->
+                            <th rowspan="3">Perusahaan</th> <!-- Kolom "Perusahaan" dengan penggabungan baris. -->
+                                <tr> <!-- Baris kedua tabel berisi kolom "waktu". -->
+                                    <th colspan="2">waktu</th> <!-- Kolom "waktu" dengan penggabungan kolom. -->
+                                </tr>
+                                <tr> <!-- Baris ketiga tabel berisi kolom "mulai" dan "selesai". -->
+                                    <th>mulai</th> <!-- Kolom "mulai". -->
+                                    <th>selesai</th> <!-- Kolom "selesai". -->
+                                </tr>
+                        </tr>
+                        <tr> <!-- Baris keempat tabel berisi data pengalaman kerja. -->
+                            <td>1</td> <!-- Data No. 1. -->
+                            <td>Software Engineering</td> <!-- Data posisi. -->
+                            <td>Google</td> <!-- Data perusahaan. -->
+                            <td>2021</td> <!-- Data tahun mulai. -->
+                            <td>2020</td> <!-- Data tahun selesai. -->
+                        </tr>
+                        <tr> <!-- Baris kelima tabel berisi data pengalaman kerja. -->
+                            <td>2</td> <!-- Data No. 2. -->
+                            <td>Web Development</td> <!-- Data posisi. -->
+                            <td>Amazon</td> <!-- Data perusahaan. -->
+                            <td>2021</td> <!-- Data tahun mulai. -->
+                            <td>Sekarang</td> <!-- Data tahun selesai (masih bekerja). -->
+                        </tr>
+                    </table>
+                    <form action="#"> <!-- Formulir kontak dengan atribut tindakan (action). -->
+                        <h2 id="hubungi-saya">Hubungi Saya</h2> <!-- Bagian "Hubungi Saya" dengan elemen h2 dan tautan ID. -->
+                        <p> <!-- Paragraf teks untuk formulir kontak. -->
+                            <label for="email">Email :</label> <!-- Label untuk input email. -->
+                            <input type="text" id="email" name="email"> <!-- Input teks untuk alamat email. -->
+                        </p>
+                        <p> <!-- Paragraf teks untuk pertanyaan. -->
+                            <label for="tanya">Apakah Matahari di ITERA ada dua?</label> <!-- Label untuk pertanyaan. -->
+                        </p>
+                        <div> <!-- Grup elemen input radio untuk pertanyaan. -->
+                            <input type="radio" id="tanya" name="tanya">Iya <!-- Pilihan pertama. -->
+                        </div>
+                        <div> <!-- Grup elemen input radio untuk pertanyaan. -->
+                            <input type="radio" id="tanya" name="tanya">Tidak <!-- Pilihan kedua. -->
+                        </div>
+                        
+                        <h2>Apa Itu?</h2> <!-- Pertanyaan lain dengan elemen h2. -->
+                        <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                            <input type="checkbox" name="a" id="a" value="1"> ini <!-- Pilihan pertama. -->
+                        </div>
+                        <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                            <input type="checkbox" name="a" id="a" value="2"> itu <!-- Pilihan kedua. -->
+                        </div>
+                        <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                            <input type="checkbox" name="a" id="a" value="3"> anu <!-- Pilihan ketiga. -->
+                        </div>
+                        <a href="#"> <!-- Ini akan merefresh jika pengguna mengklik button kirim. -->
+                        <button type="submit">Kirim</button> <!-- Tombol submit untuk mengirim formulir. -->
+                        </a>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
