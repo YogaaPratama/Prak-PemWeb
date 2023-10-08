@@ -1,0 +1,133 @@
+<!-- by ILHAM YOGA PRATAMA - 121140081 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 2 -->
+
+<!-- Dokumen HTML yang mencakup informasi CV seorang individu -->
+<!DOCTYPE html> <!-- Ini adalah deklarasi tipe dokumen HTML yang digunakan. -->
+<html> <!-- Awal dari elemen HTML. Semua konten HTML ada di dalamnya. -->
+    <head> <!-- Ini adalah bagian kepala dokumen HTML yang berisi meta informasi dan judul. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Konfigurasi tampilan untuk perangkat mobile. -->
+        <meta charset="UTF-8" /> <!-- Pengaturan karakter encoding ke UTF-8 untuk dukungan karakter internasional. -->
+        <title>CV - Ilham Yoga Pratama</title> <!-- Judul halaman web. -->
+        <link rel="stylesheet" href="121140081_Ilham Yoga Pratama_Prak2.css"> <!-- Menghubungkan file CSS eksternal ke dokumen HTML. -->
+    </head>
+    <body>
+        <div class="container"> <!-- Container untuk mengelompokkan konten utama halaman. -->
+            <div class="head"> <!-- Bagian kepala halaman dengan gambar profil dan teks header. -->
+              <img src="Foto_ILHAM.png" width="240" />  <!-- Gambar profil -->
+              <div id="header-text"> <!-- Kontainer teks header. -->
+                <h1>Hallo, Saya Ilham Yoga Pratama</h1> <!-- Teks judul utama halaman. -->
+                <h3>Mahasiswa Aktif Semester 5 Teknik Informatika ITERA</h3> <!-- Teks subjudul yang memberikan informasi tambahan. -->
+              </div>
+            </div>
+
+            <!-- Navigasi utama halaman web -->
+            <nav>
+                <ul>
+                    <li><a href="#tentang-saya">Tentang</a></li> <!-- Tautan ke bagian "Tentang Saya" -->
+                    <li><a href="#pengalaman-kerja">Pengalaman</a></li> <!-- Tautan ke bagian "Pengalaman Kerja" -->
+                    <li><a href="#hubungi-saya">Kontak</a></li> <!-- Tautan ke bagian "Hubungi Saya" -->
+                </ul>
+            </nav>
+
+            <!-- Bagian Tentang -->
+            <section class="tentang">
+                <h2 id="tentang-saya">Tentang Saya</h2>
+                <p> <!-- Paragraf teks yang menjelaskan tentang diri. -->
+                    Saya Ilham Yoga Pratama, mahasiswa Teknik Informatika, Institut Teknologi Sumatera Tahun 
+                    2021. Aktivitas saat ini adalah mahasiswa aktif semester 5 dan sebagai staff Kominfo di HMIF 
+                    (Himpunan Mahasiswa Teknik Informatika). Saya memiliki minat berkarir sebagai staff IT terutama 
+                    dalam bidang pemrograman web.
+                </p>
+                <div id="video-saya" align="center">
+                <figure> <!-- Elemen "figure" untuk menampilkan video dengan deskripsi. -->
+                    <!-- Sumber Video -->
+                    <iframe
+                    width="420"
+                    height="230" 
+                    src="https://youtube.com/embed/o1Nyhp-dQRY?si=C2DyQG833ETptm6m" 
+                    frameborder="0">
+                    </iframe>
+                    <figcaption>Ini adalah video ILHAM.</figcaption> <!-- Deskripsi video. -->
+                </figure>
+                </div>
+            </section>
+
+            <!-- Bagian "Pengalaman Saya" -->
+            <section class="pengalaman">
+            <h2 id="pengalaman-kerja">Pengalaman Kerja</h2>
+            <div class="tabel">
+            <table border="1"> <!-- Tabel untuk daftar pengalaman kerja. -->
+                <tr> <!-- Baris pertama tabel berisi judul kolom. -->
+                    <th rowspan="3">No</th> <!-- Kolom "No" dengan penggabungan baris. -->
+                    <th rowspan="3">Posisi</th> <!-- Kolom "Posisi" dengan penggabungan baris. -->
+                    <th rowspan="3">Organisasi</th> <!-- Kolom "Perusahaan" dengan penggabungan baris. -->
+                        <tr> <!-- Baris kedua tabel berisi kolom "waktu". -->
+                            <th colspan="2">waktu</th> <!-- Kolom "waktu" dengan penggabungan kolom. -->
+                        </tr>
+                        <tr> <!-- Baris ketiga tabel berisi kolom "mulai" dan "selesai". -->
+                            <th>mulai</th> <!-- Kolom "mulai". -->
+                            <th>selesai</th> <!-- Kolom "selesai". -->
+                        </tr>
+                </tr>
+                <tr> <!-- Baris keempat tabel berisi data pengalaman kerja. -->
+                    <td>1</td> <!-- Data No. 1. -->
+                    <td>Staff KOMINFO</td> <!-- Data posisi. -->
+                    <td>HMIF</td> <!-- Data perusahaan. -->
+                    <td>April 2023</td> <!-- Data tahun mulai. -->
+                    <td>belum tau</td> <!-- Data tahun selesai. -->
+                </tr>
+                <tr> <!-- Baris kelima tabel berisi data pengalaman kerja. -->
+                    <td>2</td> <!-- Data No. 2. -->
+                    <td>PANLAP Kaderisasi</td> <!-- Data posisi. -->
+                    <td>HMIF</td> <!-- Data perusahaan. -->
+                    <td>Juni 2023</td> <!-- Data tahun mulai. -->
+                    <td>belum tau</td> <!-- Data tahun selesai (masih bekerja). -->
+                </tr>
+            </table>
+            </div>
+            </section>
+
+            <!-- Bagian kontak -->
+            <section class="hubungi">
+            <form> <!-- Formulir kontak -->
+                <h2 id="hubungi-saya">Hubungi Saya</h2> <!-- Bagian "Hubungi Saya" dengan elemen h2 dan tautan ID. -->
+                <p> <!-- Paragraf teks untuk formulir kontak. -->
+                    <label for="email">Email :</label> <!-- Label untuk input email. -->
+                    <input type="text" id="email" name="email" placeholder="Masukkan Email"> <!-- Input teks untuk alamat email. -->
+                </p>
+                <p> <!-- Paragraf teks untuk pertanyaan. -->
+                    <label for="tanya">Apakah kalian mengenal saya?</label> <!-- Label untuk pertanyaan. -->
+                </p>
+                <div> <!-- Grup elemen input radio untuk pertanyaan. -->
+                    <input type="radio" id="tanya" name="tanya">Iya <!-- Pilihan pertama. -->
+                </div>
+                <div> <!-- Grup elemen input radio untuk pertanyaan. -->
+                    <input type="radio" id="tanya" name="tanya">Tidak <!-- Pilihan kedua. -->
+                </div>
+                
+                <h2>Apakah anda mau berteman dengan saya?</h2> <!-- Pertanyaan lain dengan elemen h2. -->
+                <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                    <input type="checkbox" name="a" id="a" value="1"> Ya, tentu! <!-- Pilihan pertama. -->
+                </div>
+                <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                    <input type="checkbox" name="a" id="a" value="2"> Tidak, terimakasih <!-- Pilihan kedua. -->
+                </div>
+                <div> <!-- Grup elemen input checkbox untuk pertanyaan lain. -->
+                    <input type="checkbox" name="a" id="a" value="3"> Mungkin, kita bisa mengenal satu sama lain lebih dulu <!-- Pilihan ketiga. -->
+                </div>
+                <a href="#"> <!-- Ini akan merefresh jika pengguna mengklik button kirim. -->
+                <button type="submit">Kirim</button> <!-- Tombol submit untuk mengirim formulir. -->
+                </a>
+            </form>
+            </section>
+
+            <!-- Footer -->
+            <section class="foot">
+                <footer>
+                    <!-- Informasi footer -->
+                    © 2023 ILHAM YOGA PRATAMA
+                </footer>
+            </section>
+        </div>
+    </body>
+</html>

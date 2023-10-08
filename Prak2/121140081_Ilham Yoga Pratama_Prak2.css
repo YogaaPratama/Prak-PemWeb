@@ -1,0 +1,104 @@
+/* Mengatur tampilan pada bagian body di HTML */
+body {
+    margin: 0;
+    background-color: #618264;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+/* mengatur tampilan pada bagian head di HTML */
+.head {
+    background-color: #79AC78;
+    display: flex;
+    justify-content: start;
+}
+ 
+/* mengatur tampilan gambar profil */
+.head img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 40px;
+}
+ 
+/* mengatur tampilan teks header */
+.head #header-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* mengatur tampilan pada bagian nav di HTML */
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: #B0D9B1;
+    padding: 12px;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none; /* Menghilangkan poin daftar pada tautan navigasi. */
+}
+  
+nav ul li a {
+  text-decoration: none; /* Menghilangkan dekorasi tautan. */
+  padding: 4px 20px; /* Mengatur ruang di sekitar tautan. */
+  color: black; /* Mengatur warna teks tautan. */
+}
+ 
+/* Mengatur warna teks tautan saat dihover. */
+a:hover {
+    color: #79AC78;
+}
+
+/* mengatur tampilan pada bagian tentang di HTML */
+.tentang {
+    margin: 20px;
+    background-color: #B0D9B1;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* mengatur margin pada video*/
+#video-saya {
+    margin: 20px 0;
+}
+  
+/* mengatur tampilan pada bagian pengalaman di HTML */
+.pengalaman {
+    margin: 20px;
+    background-color: #B0D9B1;
+    padding: 20px;
+    border-radius: 16px;
+}
+ 
+/* mengatur tampilan pada bagian tabel di HTML untuk ke tengah */
+.tabel {
+    display: flex;
+    justify-content: center;
+}
+  
+/* mengatur lebar dan border pada bagian tabel di HTML */
+.tabel table {
+    width: 100%;
+    border: 3;
+}
+  
+/* mengatur tampilan pada bagian hubungi di HTML */
+.hubungi {
+    margin: 20px;
+    background-color: #B0D9B1;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* Mengatur tampilan footer */
+.foot {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
