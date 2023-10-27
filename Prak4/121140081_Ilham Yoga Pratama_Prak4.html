@@ -1,0 +1,76 @@
+<!-- by ILHAM YOGA PRATAMA - 121140081 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 4 --> 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Profil Diri | Prak 4 JavaScript Dasar</title> <!-- Judul halaman web -->
+
+    <!-- Ini adalah blok CSS inline -->
+    <style> 
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+
+        /* Gaya CSS untuk tampilan layar berukuran kecil atau agar responsive */
+        @media (max-width: 768px) { 
+            .container {
+                padding: 10px;
+            }
+
+            img {
+                max-width: 100%;
+                float: none;
+                margin: 0 auto 20px;
+            }
+
+            h2 {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Profil Diri</h1> <!-- Judul utama halaman -->
+        </header>
+        <div class="container"> <!-- Kontainer untuk konten halaman -->
+            <img src="Foto_ILHAM.png" alt="ini foto ilham" width="200" height="200"> <!-- Gambar profil mahasiswa -->
+            <h2>Nama: ILHAM YOGA PRATAMA</h2> <!-- Nama mahasiswa -->
+            <h2>NIM: 121140081</h2> <!-- Nomor Induk Mahasiswa (NIM) -->
+        </div>
+        <script src="121140081_Ilham Yoga Pratama_Prak4.js"></script> <!-- Memasukkan skrip JavaScript eksternal -->
+    </body>
+</html>
