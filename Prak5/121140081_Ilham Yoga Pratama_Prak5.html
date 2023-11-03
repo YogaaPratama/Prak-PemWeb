@@ -1,0 +1,57 @@
+<!-- by ILHAM YOGA PRATAMA - 121140081 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 5 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Ilham</title>
+    <link rel="stylesheet" href="121140081_Ilham Yoga Pratama_Prak5.css">
+</head>
+<body>
+    <h1 class="judul">KALKULATOR ILHAM</h1> <!-- Judul -->
+    <div class="calculator">
+        <div class="display">
+            <div class="output"></div>
+        </div>
+        <div class="input">
+            <!-- Tombol untuk membersihkan tampilan -->
+            <button class="clear wide-button" onclick="clearDisplay()">AC</button>
+            <!-- Tombol untuk menghapus karakter terakhir -->
+            <button class="delete" onclick="deleteCharacter()">DEL</button>
+            <!-- Tombol untuk menambahkan operator penjumlahan -->
+            <button class="operator" onclick="appendOperator('+')">+</button>
+
+            <!-- Tombol-tombol angka -->
+            <button class="number" onclick="appendNumber('7')">7</button>
+            <button class="number" onclick="appendNumber('8')">8</button>
+            <button class="number" onclick="appendNumber('9')">9</button>
+            <!-- Tombol untuk menambahkan operator pengurangan -->
+            <button class="operator" onclick="appendOperator('-')">-</button>
+
+            <!-- Tombol-tombol angka -->
+            <button class="number" onclick="appendNumber('4')">4</button>
+            <button class="number" onclick="appendNumber('5')">5</button>
+            <button class="number" onclick="appendNumber('6')">6</button>
+            <!-- Tombol untuk menambahkan operator perkalian -->
+            <button class="operator" onclick="appendOperator('*')">*</button>
+
+            <!-- Tombol-tombol angka -->
+            <button class="number" onclick="appendNumber('1')">1</button>
+            <button class="number" onclick="appendNumber('2')">2</button>
+            <button class="number" onclick="appendNumber('3')">3</button>
+            <!-- Tombol untuk menambahkan operator pembagian -->
+            <button class="operator" onclick="appendOperator('/')">/</button>
+
+            <!-- Tombol-tombol angka, angka 00, dan desimal -->
+            <button class="number" onclick="appendNumber('00')">00</button>
+            <button class="number" onclick="appendNumber('0')">0</button>
+            <button class="decimal" onclick="appendDecimal('.')">.</button>
+            <!-- Tombol untuk menghitung hasil -->
+            <button class="equals" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="121140081_Ilham Yoga Pratama_Prak5.js"></script>
+</body>
+</html>

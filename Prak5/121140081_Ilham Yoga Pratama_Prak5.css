@@ -1,0 +1,98 @@
+/* by ILHAM YOGA PRATAMA - 121140081 */
+/* Praktikum Pemrograman Web RB - Tugas 5 */
+
+/* Setel margin dan padding ke nol, dan gunakan box-sizing border-box untuk semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk halaman body */
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gaya untuk judul (jika ada) */
+.judul {
+  font-size: 50px;
+  text-align: center;
+  margin: 100px 0;
+}
+
+/* Gaya untuk kalkulator */
+.calculator {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: right;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+}
+
+/* Gaya untuk area tampilan (display) kalkulator */
+.display {
+  display: grid;
+  background: grey;
+  color: white;
+  border: 8px solid white;
+} 
+
+/* Gaya untuk area input kalkulator */
+.input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+/* Gaya untuk tombol kalkulator */
+button {
+  height: 50px;
+  margin: 5px; 
+  border: none;
+  background-color: white;
+  padding: 3.6rem;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Gaya tombol ketika dihover (menggeser berat huruf) */
+button:hover {
+  font-weight: bold;
+}
+
+/* Gaya untuk tombol-tombol khusus: clear, operator, delete */
+.clear,
+.operator,
+.delete {
+  font-size: 25px; 
+  background-color: #0174BE;
+}
+
+/* Gaya untuk tombol desimal dan angka */
+.decimal,
+.number {
+  font-size: 25px;
+}
+
+/* Gaya untuk tombol sama dengan (=) */
+.equals {
+  font-size: 22px;
+  background-color: grey;
+}
+
+/* Gaya untuk tombol lebar (wide-button) */
+.wide-button {
+  background-color: red;
+  grid-column: span 2;
+}
+
+/* Gaya untuk area output */
+.output {
+  font-size: 28px;
+  padding: 25px;
+}
