@@ -1,0 +1,75 @@
+<!-- by ILHAM YOGA PRATAMA - 121140081 -->
+<!-- Praktikum Pemrograman Web RB - Tugas 4 --> 
+<!-- Output di dalam halaman html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Bilangan Ganjil dan Genap</title>
+    <style>
+        /* Ini adalah blok CSS inline */
+        body {
+            font-family: Arial, sans-serif; 
+            text-align: center;
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333; 
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            padding: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 3px; 
+        }
+        button {
+            background-color: #007bff; 
+            color: #fff; 
+            border: 1px solid #ccc; 
+            border-radius: 9px; 
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer; 
+        }
+        button:hover {
+            background-color: #0056b3; 
+        }
+        span {
+            font-size: 18px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Hitung Bilangan Ganjil dan Genap</h1> <!-- Judul halaman web -->
+    <label for="inputBilangan">Masukkan Bilangan Bulat Positif:</label> <!-- Label input -->
+    <input type="number" id="inputBilangan" required> <!-- Input untuk memasukkan bilangan -->
+    <button onclick="hitungGanjilGenap()">Hitung</button> <!-- Tombol "Hitung" dengan event click -->
+    <br>
+    <span id="hasilGanjil"></span><br> <!-- Elemen untuk menampilkan hasil jumlah ganjil -->
+    <span id="hasilGenap"></span> <!-- Elemen untuk menampilkan hasil jumlah genap -->
+    
+    <script>
+        // Fungsi JavaScript untuk menghitung bilangan ganjil dan genap
+        function hitungGanjilGenap() {
+            var bilangan = parseInt(document.getElementById("inputBilangan").value); // Ambil nilai dari input
+            var jumlahGanjil = 0; // Inisialisasi jumlah bilangan ganjil
+            var jumlahGenap = 0; // Inisialisasi jumlah bilangan genap
+
+            for (var i = 1; i <= bilangan; i++) {
+                if (i % 2 === 0) {
+                    jumlahGenap++; // Jika bilangan genap, tambahkan ke jumlah genap
+                } else {
+                    jumlahGanjil++; // Jika bilangan ganjil, tambahkan ke jumlah ganjil
+                }
+            }
+
+            document.getElementById("hasilGanjil").textContent = "Jumlah bilangan ganjil: " + jumlahGanjil; // Tampilkan hasil jumlah ganjil
+            document.getElementById("hasilGenap").textContent = "Jumlah bilangan genap: " + jumlahGenap; // Tampilkan hasil jumlah genap
+        }
+    </script>
+</body>
+</html>

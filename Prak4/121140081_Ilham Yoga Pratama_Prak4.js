@@ -2,7 +2,7 @@
 // Praktikum Pemrograman Web RB - Tugas 4
 
 // Meminta pengguna untuk memasukkan sebuah angka dan menyimpannya dalam variabel 'userInput'
-const userInput = prompt("Masukkan sebuah angka:");
+const userInput = prompt("Masukkan Bilangan Bulat Positif:");
 
 // Mengkonversi 'userInput' menjadi tipe data number dan menyimpannya dalam variabel 'number'
 const number = Number(userInput);
@@ -28,7 +28,7 @@ if (isNaN(number)) {
   }
 
   // Cetak hasil perhitungan
-  console.log(`Angka yang dimasukkan: ${number}`);
+  console.log(`Bilangan bulat yang dimasukkan: ${number}`);
   console.log(`Jumlah bilangan ganjil: ${oddCount}`);
   console.log(`Jumlah bilangan genap: ${evenCount}`);
 }
